@@ -5,7 +5,6 @@ from io import BytesIO
 from fastapi import FastAPI, Response
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-
 app = FastAPI()
 
 @app.get("/")
