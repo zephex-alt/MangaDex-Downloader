@@ -48,6 +48,3 @@ def get_manga(manga_id: str):
 	return Response(content=zip_buffer.getvalue(), media_type="application/zip", headers={
 		"Content-Disposition": f"attachment; filename=manga_{manga_id}.zip"
 	})
-
-if __name__ == "__main__":
-	uvicorn.run(app="main:app", host="127.0.0.1", port=3000, reload=True)
